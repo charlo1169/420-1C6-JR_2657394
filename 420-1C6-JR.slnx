@@ -1,1 +1,7 @@
-<Solution />
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Cours02_Git/Cours02_Git.vcxproj" Id="4b3b55a2-9d08-4ce8-a021-a8fc8a9587c6" />
+</Solution>
