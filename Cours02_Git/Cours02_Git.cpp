@@ -380,5 +380,5 @@ int main()
 
 #pragma endregion
 
-    // TODO: Faire le Devoir à la maison
+ // TODO: Faire le Devoir à la maison
 }
