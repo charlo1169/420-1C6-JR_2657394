@@ -6,4 +6,5 @@
   <Project Path="Cours02_Git/Cours02_Git.vcxproj" Id="4b3b55a2-9d08-4ce8-a021-a8fc8a9587c6" />
   <Project Path="Cours03_Variables/Cours03_Variables.vcxproj" Id="7116781e-84e5-4f26-9928-0b640af1bd00" />
   <Project Path="Cours04/Cours04.vcxproj" Id="2341f5e4-7f4f-4964-abb6-9eab3fbb791d" />
+  <Project Path="Cours04_Devoir/Cours04_Devoir.vcxproj" Id="15e418a7-498d-4d01-99f5-09ad2627973b" />
 </Solution>
