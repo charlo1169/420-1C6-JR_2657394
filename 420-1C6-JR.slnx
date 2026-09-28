@@ -11,4 +11,7 @@
   <Project Path="Cours06_Devoir/Cours06_Devoir.vcxproj" Id="4075f54a-ec96-4484-af65-82a4ee86975c" />
   <Project Path="Cours07/Cours07.vcxproj" Id="cd1b8097-c1a9-4c25-b2f0-3a609d88e335" />
   <Project Path="Cours08_ConstantesEnum/Cours08_ConstantesEnum.vcxproj" Id="6110d80a-3bc7-4e90-b3d5-abc208b0cb8a" />
+  <Project Path="Cours13_While/Cours13_While.vcxproj" Id="16272d23-0f28-477a-97cf-33474da3c3e4" />
+  <Project Path="Cours15_BouclesImbriques/Cours15_BouclesImbriques.vcxproj" Id="9116758b-96bb-4764-b17b-3da96d73f3a2" />
+  <Project Path="Cours16_BreakContinue/Cours16_BreakContinue.vcxproj" Id="32bd173d-d955-40b3-9a7f-94b62b2efde3" />
 </Solution>
