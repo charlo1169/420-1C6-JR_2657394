@@ -1,6 +1,6 @@
 // ============================================================
 // TP2 - Calculatrice
-// Charlo Sabourin (2657394)
+// Charles-Olivier Sabourin (2657394)
 // Description : Calculatrice qui effectue des operations sur
 // des nombres a virgule et conserve le resultat entre les
 // operations.
@@ -24,7 +24,7 @@ int main()
         // Afficher l'en-tete et le menu
         cout << "************************************************************\n";
         cout << "* Calculatrice *\n";
-        cout << "* Par Charlo Sabourin (2657394) *\n";
+        cout << "* Par Charles-Olivier Sabourin (2657394) *\n";
         cout << "************************************************************\n";
         cout << message;
         message = "";
@@ -87,11 +87,71 @@ int main()
                     break;
                 }
                 case '-':
-                    // TODO : soustraction
+                {
+                    bool nombreValide = true;
+                    do
+                    {
+                        nombreValide = true;
+                        cout << "Entrer un nombre : ";
+
+                        string chaineNombre;
+                        cin >> chaineNombre;
+
+                        try
+                        {
+                            size_t nombreCaracteresConvertis;
+                            double nombre = stod(chaineNombre, &nombreCaracteresConvertis);
+
+                            if (nombreCaracteresConvertis < chaineNombre.length())
+                            {
+                                throw exception();
+                            }
+
+                            double ancienResultat = resultat;
+                            resultat = ancienResultat - nombre;
+                            message = format("Operation : {} - {} = {}\n", ancienResultat, nombre, resultat);
+                        }
+                        catch (...)
+                        {
+                            cout << "Erreur : nombre invalide, doit etre un nombre a virgule !\n";
+                            nombreValide = false;
+                        }
+                    } while (!nombreValide);
                     break;
+                }
                 case '*':
-                    // TODO : multiplication
+                {
+                    bool nombreValide = true;
+                    do
+                    {
+                        nombreValide = true;
+                        cout << "Entrer un nombre : ";
+
+                        string chaineNombre;
+                        cin >> chaineNombre;
+
+                        try
+                        {
+                            size_t nombreCaracteresConvertis;
+                            double nombre = stod(chaineNombre, &nombreCaracteresConvertis);
+
+                            if (nombreCaracteresConvertis < chaineNombre.length())
+                            {
+                                throw exception();
+                            }
+
+                            double ancienResultat = resultat;
+                            resultat = ancienResultat * nombre;
+                            message = format("Operation : {} * {} = {}\n", ancienResultat, nombre, resultat);
+                        }
+                        catch (...)
+                        {
+                            cout << "Erreur : nombre invalide, doit etre un nombre a virgule !\n";
+                            nombreValide = false;
+                        }
+                    } while (!nombreValide);
                     break;
+                }
                 case '/':
                     // TODO : division
                     break;
