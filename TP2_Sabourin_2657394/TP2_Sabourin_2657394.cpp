@@ -16,6 +16,7 @@ int main()
     setlocale(LC_ALL, "en_US");
 
     double resultat = 0;
+    string message = "";
 
     bool programmeActif = true;
     while (programmeActif)
@@ -23,8 +24,10 @@ int main()
         // Afficher l'en-tete et le menu
         cout << "************************************************************\n";
         cout << "* Calculatrice *\n";
-        cout << "* Par Charlo (matricule) *\n";
+        cout << "* Par Charlo Sabourin (2657394) *\n";
         cout << "************************************************************\n";
+        cout << message;
+        message = "";
         cout << format("Resultat : {}\n", resultat);
         cout << "+) Addition\n";
         cout << "-) Soustraction\n";
@@ -51,8 +54,38 @@ int main()
             switch (choixMenu)
             {
                 case '+':
-                    // TODO : addition
+                {
+                    bool nombreValide = true;
+                    do
+                    {
+                        nombreValide = true;
+                        cout << "Entrer un nombre : ";
+
+                        string chaineNombre;
+                        cin >> chaineNombre;
+
+                        try
+                        {
+                            size_t nombreCaracteresConvertis;
+                            double nombre = stod(chaineNombre, &nombreCaracteresConvertis);
+
+                            if (nombreCaracteresConvertis < chaineNombre.length())
+                            {
+                                throw exception();
+                            }
+
+                            double ancienResultat = resultat;
+                            resultat = ancienResultat + nombre;
+                            message = format("Operation : {} + {} = {}\n", ancienResultat, nombre, resultat);
+                        }
+                        catch (...)
+                        {
+                            cout << "Erreur : nombre invalide, doit etre un nombre a virgule !\n";
+                            nombreValide = false;
+                        }
+                    } while (!nombreValide);
                     break;
+                }
                 case '-':
                     // TODO : soustraction
                     break;
