@@ -153,8 +153,45 @@ int main()
                     break;
                 }
                 case '/':
-                    // TODO : division
+                {
+                    bool nombreValide = true;
+                    do
+                    {
+                        nombreValide = true;
+                        cout << "Entrer un nombre : ";
+
+                        string chaineNombre;
+                        cin >> chaineNombre;
+
+                        try
+                        {
+                            size_t nombreCaracteresConvertis;
+                            double nombre = stod(chaineNombre, &nombreCaracteresConvertis);
+
+                            if (nombreCaracteresConvertis < chaineNombre.length())
+                            {
+                                throw exception();
+                            }
+
+                            if (nombre == 0)
+                            {
+                                message = "Operation annulee : impossible de diviser par 0 !\n";
+                            }
+                            else
+                            {
+                                double ancienResultat = resultat;
+                                resultat = ancienResultat / nombre;
+                                message = format("Operation : {} / {} = {}\n", ancienResultat, nombre, resultat);
+                            }
+                        }
+                        catch (...)
+                        {
+                            cout << "Erreur : nombre invalide, doit etre un nombre a virgule !\n";
+                            nombreValide = false;
+                        }
+                    } while (!nombreValide);
                     break;
+                }
                 case '^':
                     // TODO : exposant
                     break;
