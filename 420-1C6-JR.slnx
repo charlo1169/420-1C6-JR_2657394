@@ -3,18 +3,20 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="420-1C6-JR_TP2/Tp2/Tp2.vcxproj" Id="4908c52f-9605-4291-9256-056e1249ef97" />
-  <Project Path="Cours02_Git/Cours02_Git.vcxproj" Id="4b3b55a2-9d08-4ce8-a021-a8fc8a9587c6" />
-  <Project Path="Cours03_Variables/Cours03_Variables.vcxproj" Id="7116781e-84e5-4f26-9928-0b640af1bd00" />
-  <Project Path="Cours04/Cours04.vcxproj" Id="2341f5e4-7f4f-4964-abb6-9eab3fbb791d" />
-  <Project Path="Cours04_Devoir/Cours04_Devoir.vcxproj" Id="15e418a7-498d-4d01-99f5-09ad2627973b" />
-  <Project Path="Cours06_Conditions.cpp/Cours06_Conditions.cpp.vcxproj" Id="32b244d5-fd29-4eb8-b9ad-6729e3daf671" />
-  <Project Path="Cours06_Devoir/Cours06_Devoir.vcxproj" Id="4075f54a-ec96-4484-af65-82a4ee86975c" />
-  <Project Path="Cours07/Cours07.vcxproj" Id="cd1b8097-c1a9-4c25-b2f0-3a609d88e335" />
-  <Project Path="Cours08_ConstantesEnum/Cours08_ConstantesEnum.vcxproj" Id="6110d80a-3bc7-4e90-b3d5-abc208b0cb8a" />
-  <Project Path="Cours13_While/Cours13_While.vcxproj" Id="16272d23-0f28-477a-97cf-33474da3c3e4" />
-  <Project Path="Cours15_BouclesImbriques/Cours15_BouclesImbriques.vcxproj" Id="9116758b-96bb-4764-b17b-3da96d73f3a2" />
-  <Project Path="Cours16_BreakContinue/Cours16_BreakContinue.vcxproj" Id="32bd173d-d955-40b3-9a7f-94b62b2efde3" />
-  <Project Path="Cours23_Fonctions.cpp/Cours23_Fonctions.cpp.vcxproj" Id="757798d4-33a2-4fdb-923a-36a1bc0d956c" />
-  <Project Path="TP2_Sabourin_2657394/TP2_Sabourin_2657394.vcxproj" Id="7e016eb3-f55b-4249-be0c-07844e2ac567" />
+  <Project Path="Cours27_Modulo/Cours27_Modulo.vcxproj" Id="88b53728-09ef-41f1-b825-bc617399efe2" />
+  <Project Path="D:/420-1C6-JR_2657394/420-1C6-JR_TP2/Tp2/Tp2.vcxproj" Id="4908c52f-9605-4291-9256-056e1249ef97" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours02_Git/Cours02_Git.vcxproj" Id="4b3b55a2-9d08-4ce8-a021-a8fc8a9587c6" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours03_Variables/Cours03_Variables.vcxproj" Id="7116781e-84e5-4f26-9928-0b640af1bd00" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours04/Cours04.vcxproj" Id="2341f5e4-7f4f-4964-abb6-9eab3fbb791d" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours04_Devoir/Cours04_Devoir.vcxproj" Id="15e418a7-498d-4d01-99f5-09ad2627973b" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours06_Conditions.cpp/Cours06_Conditions.cpp.vcxproj" Id="32b244d5-fd29-4eb8-b9ad-6729e3daf671" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours06_Devoir/Cours06_Devoir.vcxproj" Id="4075f54a-ec96-4484-af65-82a4ee86975c" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours07/Cours07.vcxproj" Id="cd1b8097-c1a9-4c25-b2f0-3a609d88e335" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours08_ConstantesEnum/Cours08_ConstantesEnum.vcxproj" Id="6110d80a-3bc7-4e90-b3d5-abc208b0cb8a" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours13_While/Cours13_While.vcxproj" Id="16272d23-0f28-477a-97cf-33474da3c3e4" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours15_BouclesImbriques/Cours15_BouclesImbriques.vcxproj" Id="9116758b-96bb-4764-b17b-3da96d73f3a2" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours16_BreakContinue/Cours16_BreakContinue.vcxproj" Id="32bd173d-d955-40b3-9a7f-94b62b2efde3" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours23_Fonctions.cpp/Cours23_Fonctions.cpp.vcxproj" Id="757798d4-33a2-4fdb-923a-36a1bc0d956c" />
+  <Project Path="D:/420-1C6-JR_2657394/Cours25_References/Cours25_References.vcxproj" Id="9a096910-fea4-44c1-a23c-6a3d65b9436b" />
+  <Project Path="D:/420-1C6-JR_2657394/TP2_Sabourin_2657394/TP2_Sabourin_2657394.vcxproj" Id="7e016eb3-f55b-4249-be0c-07844e2ac567" />
 </Solution>

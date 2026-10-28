@@ -293,7 +293,7 @@ int main()
 	if (true)
 	{
 		cout << "\nSans fonctions : \n";
-		cout << "Votre message d'aujourd'hui est"
+		cout << "Votre message d'aujourd'hui est";
 	}
 
 	// TODO: Créer une fonction qui affiche un message dynamique sans retour (void) et l'appeler plusieurs fois
