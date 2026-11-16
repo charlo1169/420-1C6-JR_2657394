@@ -211,10 +211,14 @@ int main()
 		cout << "--- Utilisation des vecteurs ---\n\n";
 
 		// TODO: Créer un vecteur vide
-
+		vector<int> nombres;
 
 		// TODO: Ajouter les valeurs à la fin du vecteur avec .push_back() : 10, 20, 30, 40, 50
-
+		nombres.push_back(10);
+		nombres.push_back(20);
+		nombres.push_back(30);
+		nombres.push_back(40);
+		nombres.push_back(50);
 
 		// Lire une valeur à ajouter à la Console
 		int valeurAjoutee;
@@ -222,64 +226,84 @@ int main()
 		cin >> valeurAjoutee;
 
 		// TODO: Ajouter 3 fois la valeur lue à la Console à la fin du vecteur
-
+		for (int i = 0; i < 3; i++)
+		{
+			nombres.push_back(valeurAjoutee);
+		}
 
 		// Afficher les valeurs à la main en utilisant l'opérateur []
-		//cout << format("Premier element   [0] : {}\n", vecteur[0]);
-		//cout << format("Deuxieme element  [1] : {}\n", vecteur[1]);
-		//cout << format("Troisieme element [2] : {}\n", vecteur[2]);
-		//cout << format("Quatrieme element [3] : {}\n", vecteur[3]);
-		//cout << format("Cinquieme element [4] : {}\n", vecteur[4]);
-		//cout << format("Sixieme element   [5] : {}\n", vecteur[5]);
-		//cout << format("Septieme element  [6] : {}\n", vecteur[6]);
-		//cout << format("Huitieme element  [7] : {}\n", vecteur[7]);
+		cout << format("Premier element   [0] : {}\n", nombres[0]);
+		cout << format("Deuxieme element  [1] : {}\n", nombres[1]);
+		cout << format("Troisieme element [2] : {}\n", nombres[2]);
+		cout << format("Quatrieme element [3] : {}\n", nombres[3]);
+		cout << format("Cinquieme element [4] : {}\n", nombres[4]);
+		cout << format("Sixieme element   [5] : {}\n", nombres[5]);
+		cout << format("Septieme element  [6] : {}\n", nombres[6]);
+		cout << format("Huitieme element  [7] : {}\n", nombres[7]);
 
 		// TODO: Montrer un crash avec un mauvais index du vecteur
 		// Utiliser le bouton 'Recommencer' et la 'Pile d'appels' pour identifier la ligne du crash
-		//cout << format("Avant debut tableau  [-1] : {}\n", vecteur[-1]); // Crash
-		//cout << format("Apres fin tableau     [8] : {}\n", vecteur[8]);  // Crash
+		//cout << format("avant debut tableau  [-1] : {}\n", nombres[-1]); // crash
+		//cout << format("apres fin tableau     [8] : {}\n", nombres[8]);  // crash
 
 		// TODO: Afficher le nombre d'éléments du vecteur et les valeurs avec une boucle for avec 'size()' et l'opérateur '[]'
-		cout << format("\nNombre d'elements : {}\n", 123);
+		cout << format("\nNombre d'elements : {}\n", nombres.size());
 
-		for (int i = 0; i < 123; i++)
+		for (int i = 0; i < nombres.size(); i++)
 		{
-			cout << format("vecteur[{}] : {}\n", i, 123);
+			cout << format("vecteur[{}] : {}\n", i, nombres[i]);
 		}
 
 		// TODO: Modifier la valeur du 3ème et 5ème élément à 123 et 456 avec l'opérateur '[]'
-
+		nombres[2] = 123;
+		nombres[4] = 456;
 
 		// TODO: Insérer la valeur 777 à la fin du vecteur avec 'push_back()'
-
+		nombres.push_back(777);
 
 		// TODO: Insérer la valeur 999 au début du vecteur avec 'insert(vecteur.begin() + index, valeur)'
-
+		nombres.insert(nombres.begin(), 999);
 
 		// TODO: Insérer la valeur 888 à l'avant-dernier index du vecteur and utilisant 'insert(vecteur.begin() + index, valeur)'
-
+		nombres.insert(nombres.begin() + nombres.size() - 1, 888);
 
 		// TODO: Réafficher les valeurs en utilisant la boucle for d'affichage précédente
+		cout << format("\nNombre d'elements : {}\n", nombres.size());
 
+		for (int i = 0; i < nombres.size(); i++)
+		{
+			cout << format("vecteur[{}] : {}\n", i, nombres[i]);
+
+		}
 
 		// TODO: Récupérer la valeur et retirer le dernier élément du vecteur avec 'pop_back()'
-
+		int nombre1 = nombres.back();
+		nombres.pop_back();
 
 		// TODO: Récupérer la valeur et supprimer le premier élément du vecteur (index 0) avec 'erase(vecteur.begin() + index)'
-
+		int nombre2 = nombres[0];
+		nombres.erase(nombres.begin());
 
 		// TODO: Récupérer la valeur du 4ème élément du vecteur (index 3) avec l'opérateur '[]'
 		// - Ensuite supprimer l'élément avec 'erase(vecteur.begin() + index)'
-
+		int nombre3 = nombres[3];
+		nombres.erase(nombres.begin() + 3);
 
 		// TODO: Réafficher les valeurs en utilisant la boucle for d'affichage précédente
+		cout << format("\nNombre d'elements : {}\n", nombres.size());
 
+		for (int i = 0; i < nombres.size(); i++)
+		{
+			cout << format("vecteur[{}] : {}\n", i, nombres[i]);
+
+		}
 
 		// TODO: Trier le vecteur en ordre croissant avec l'algorithme 'sort(vecteur.begin(), vecteur.end())'
-
+		sort(nombres.begin(), nombres.end());
 
 		// TODO: Réafficher les valeurs en utilisant la boucle for d'affichage précédente
 
+		cout << "hello";
 	}
 
 	// *** Recherche et suppression ***
@@ -292,10 +316,17 @@ int main()
 	// - Débuter avec		: 0			(premier élément)
 	// - Terminer i à		: size() 	(après premier)
 	// - Incrémentation i	: i++
-	if (false)
+	if (true)
 	{
 		vector<int> vecteur = { 10, 20, 30, 10, 20, 30, 10, 10, 10, 20, 30, 30, 30, 10, 20, 20, 20, 30, 30, 30 };
 
+		for (int i = 0; i < vecteur.size(); i++)
+		{
+			if (vecteur[i] == 30)
+			{
+				vecteur.erase(vecteur.begin() + i);
+			}
+		}
 
 
 		afficherVecteurParReference(vecteur, "vecteur sans premier 30 (for positif)");
